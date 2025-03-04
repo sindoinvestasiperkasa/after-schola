@@ -17,7 +17,7 @@
 						</a>
 					</div>
 					<div class="top-navbar-title">
-						<p>Guruji</p>
+						<p>After Schola</p>
 					</div>
 					<div class="skip-btn-goal">
 						<a href="notification.html">

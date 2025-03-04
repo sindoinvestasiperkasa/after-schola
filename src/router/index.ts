@@ -8,8 +8,25 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/home',
-    name: 'Home',
-    component: () => import('@/views/home/HomeView.vue')
+    name: 'Home Main',
+    component: () => import('@/views/home/HomeMain.vue'),
+    children: [
+      {
+        path: '',
+        name: 'Home',
+        component: () => import('@/views/home/HomeView.vue')
+      },
+      {
+        path: 'categories',
+        name: 'Categories',
+        component: () => import('@/views/home/categories/CategoriesView.vue')
+      },
+      {
+        path: 'trending-course',
+        name: 'Trending Course Home',
+        component: () => import('@/views/home/trendingCourse/TrendingCourse.vue')
+      }
+    ]
   },
   {
     path: '/hub',

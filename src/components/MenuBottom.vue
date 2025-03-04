@@ -4,9 +4,9 @@
             <div class="home-navigation-menu">
                 <div class="bottom-panel nagivation-menu-wrap">
                     <ul class="bootom-tabbar">
-                        <li class="active">
-                            <RouterLink to="/" class="active">
-                                <svg class="active" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li :class="{ active: route.path.startsWith('/home') }">
+                            <RouterLink to="/" :class="{ active: route.path.startsWith('/home') }">
+                                <svg :class="{ active: route.path.startsWith('/home') }" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <mask id="mask0_202_7251" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
                                         <rect width="24" height="24" fill="white"/>
                                     </mask>
@@ -15,7 +15,7 @@
                                     </g>
                                 </svg>
                             </RouterLink>
-                            <div class="orange-boder active"></div>	
+                            <div class="orange-boder" :class="{ active: route.path.startsWith('/home') }"></div>	
                         </li>
                         <li>
                             <a href="bookmark.html">
@@ -31,9 +31,9 @@
                             </a>
                             <div class="orange-boder"></div>	
                         </li>
-                        <li>
-                            <RouterLink to="/myCourse">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li :class="{ active: route.path.startsWith('/myCourse') }">
+                            <RouterLink to="/myCourse" :class="{ active: route.path.startsWith('/myCourse') }">
+                                <svg :class="{ active: route.path.startsWith('/myCourse') }" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <mask id="mask0_202_1996" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
                                         <rect width="24" height="24" fill="white"/>
                                     </mask>
@@ -46,11 +46,11 @@
                                     </g>
                                 </svg>
                             </RouterLink>
-                            <div class="orange-boder"></div>	
+                            <div class="orange-boder" :class="{ active: route.path.startsWith('/myCourse') }"></div>	
                         </li>
-                        <li class="active">
-                            <RouterLink to="/hub" class="active">
-                                <svg class="active" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li :class="{ active: route.path.startsWith('/hub') }">
+                            <RouterLink to="/hub" :class="{ active: route.path.startsWith('/hub') }">
+                                <svg :class="{ active: route.path.startsWith('/hub') }" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <mask id="mask0_202_1988" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
                                         <rect width="24" height="24" fill="white"/>
                                     </mask>
@@ -62,11 +62,11 @@
                                     </g>
                                 </svg>
                             </RouterLink>
-                            <div class="orange-boder active"></div>
+                            <div class="orange-boder" :class="{ active: route.path.startsWith('/hub') }"></div>
                         </li>
-                        <li>
-                            <RouterLink to="/profile">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li :class="{ active: route.path.startsWith('/profile') }">
+                            <RouterLink to="/profile" :class="{ active: route.path.startsWith('/profile') }">
+                                <svg :class="{ active: route.path.startsWith('/profile') }" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <mask id="mask0_202_1984" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
                                         <rect width="24" height="24" fill="white"/>
                                     </mask>
@@ -75,7 +75,7 @@
                                     </g>
                                 </svg>
                             </RouterLink>
-                            <div class="orange-boder"></div>	
+                            <div class="orange-boder" :class="{ active: route.path.startsWith('/profile') }"></div>	
                         </li>
                     </ul>
                 </div>
@@ -84,14 +84,8 @@
     </div>
 </template>
 <script setup>
-import { onMounted } from 'vue';
 import { useRoute } from 'vue-router';
-
-// hapus class active pada saat bukan di route nya
 const route = useRoute();
-onMounted(() => {
-    document.querySelector(`.${route.name}`).classList.add('active')
-})
 </script>
 <style lang="">
     

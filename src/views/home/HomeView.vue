@@ -45,7 +45,9 @@
                         <h2 class="home1-txt3">📙 Categories</h2>
                     </div>
                     <div class="view-all-second">
-                        <a href="category-screen.html"><p class="see-all-txt">See all<span><img src="/assets/svg/right-arrow.svg" alt="right-arrow"></span></p></a>
+                        <RouterLink to="/home/categories">
+                            <p class="see-all-txt">See all<span><img src="/assets/svg/right-arrow.svg" alt="right-arrow"></span></p>
+                        </RouterLink>
                     </div>
                 </div>
             </div>
@@ -147,7 +149,9 @@
                     <h2 class="home1-txt3">🔥 Trending Courses</h2>
                 </div>
                 <div class="view-all-second">
-                    <a href="trending-course.html"><p class="see-all-txt">See all<span><img src="/assets/svg/right-arrow.svg" alt="right-arrow"></span></p></a>
+                    <RouterLink to="/home/trending-course">
+                        <p class="see-all-txt">See all<span><img src="/assets/svg/right-arrow.svg" alt="right-arrow"></span></p>
+                    </RouterLink>
                 </div>
             </div>
             <div class="trending-course-bottom-wrap mt-16">
@@ -225,6 +229,30 @@
                 </div>
             </div>
             <div class="home-mentor-bottom mt-16">
+                <div class="home-mentor-sec-wrap redirect-mentor">
+                    <div class="home-mentor-sec">
+                        <div><img src="/assets/images/homescreen/mentor1.png" alt="mentor-img"></div>
+                    </div>
+                    <div class="home-mentor-name"><p>Jacob</p></div>
+                </div>
+                <div class="home-mentor-sec-wrap redirect-mentor">
+                    <div class="home-mentor-sec">
+                        <div><img src="/assets/images/homescreen/mentor2.png" alt="mentor-img"></div>
+                    </div>
+                    <div class="home-mentor-name"><p>Claire</p></div>
+                </div>
+                <div class="home-mentor-sec-wrap redirect-mentor">
+                    <div class="home-mentor-sec">
+                        <div><img src="/assets/images/homescreen/mentor3.png" alt="mentor-img"></div>
+                    </div>
+                    <div class="home-mentor-name"><p>Priscilla</p></div>
+                </div>
+                <div class="home-mentor-sec-wrap redirect-mentor">
+                    <div class="home-mentor-sec">
+                        <div><img src="/assets/images/homescreen/mentor4.png" alt="mentor-img"></div>
+                    </div>
+                    <div class="home-mentor-name"><p>Wade</p></div>
+                </div>
                 <div class="home-mentor-sec-wrap redirect-mentor">
                     <div class="home-mentor-sec">
                         <div><img src="/assets/images/homescreen/mentor1.png" alt="mentor-img"></div>
@@ -702,6 +730,124 @@
 <script setup>
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import MenuBottom from '@/components/MenuBottom.vue';
+
+import { onMounted, nextTick } from "vue";
+
+onMounted(() => {
+  nextTick(() => {
+    if (window.$ && $(".categories-slider").length) {
+      $(".categories-slider").slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    } else {
+      console.error("Slick.js gagal dijalankan. Periksa apakah jQuery sudah dimuat.");
+    }
+
+    if (window.$ && $(".trending-course-bottom-wrap").length) {
+      $(".trending-course-bottom-wrap").slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    } else {
+      console.error("Slick.js gagal dijalankan. Periksa apakah jQuery sudah dimuat.");
+    }
+
+    if (window.$ && $(".home-mentor-bottom").length) {
+      $(".home-mentor-bottom").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    } else {
+      console.error("Slick.js gagal dijalankan. Periksa apakah jQuery sudah dimuat.");
+    }
+
+    if (window.$ && $(".home-release-bottom-sec").length) {
+      $(".home-release-bottom-sec").slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    } else {
+      console.error("Slick.js gagal dijalankan. Periksa apakah jQuery sudah dimuat.");
+    }
+  });
+});
 </script>
 <style lang="">
     
