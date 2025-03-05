@@ -10,7 +10,7 @@
 						<div class="chatscree2-wrap">
 							<div class="chat-img">
 								<div class="chat-img-sec">
-									<img src="assets/images/chat/chat1.png" alt="client-img" class="w-100">
+									<img src="/assets/images/chat/chat1.png" alt="client-img" class="w-100">
 									<div class="online-btn">
 										<div class="green-btn"></div>
 									</div>
@@ -35,7 +35,7 @@
 						<div class="chatscree2-wrap">
 							<div class="chat-img">
 								<div class="chat-img-sec">
-									<img src="assets/images/chat/chat2.png" alt="client-img" class="w-100">
+									<img src="/assets/images/chat/chat2.png" alt="client-img" class="w-100">
 								</div>
 							</div>
 							<div class="chat-content">
@@ -56,7 +56,7 @@
 						<div class="chatscree2-wrap">
 							<div class="chat-img">
 								<div class="chat-img-sec">
-									<img src="assets/images/chat/chat3.png" alt="client-img" class="w-100">
+									<img src="/assets/images/chat/chat3.png" alt="client-img" class="w-100">
 									<div class="online-btn">
 										<div class="green-btn"></div>
 									</div>
@@ -80,7 +80,7 @@
 						<div class="chatscree2-wrap">
 							<div class="chat-img">
 								<div class="chat-img-sec">
-									<img src="assets/images/chat/chat4.png" alt="client-img" class="w-100">
+									<img src="/assets/images/chat/chat4.png" alt="client-img" class="w-100">
 									<div class="online-btn">
 										<div class="green-btn"></div>
 									</div>
@@ -104,7 +104,7 @@
 						<div class="chatscree2-wrap">
 							<div class="chat-img">
 								<div class="chat-img-sec">
-									<img src="assets/images/chat/chat5.png" alt="client-img" class="w-100">
+									<img src="/assets/images/chat/chat5.png" alt="client-img" class="w-100">
 								</div>
 							</div>
 							<div class="chat-content">
