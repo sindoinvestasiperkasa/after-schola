@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "after-schola"
+  },
+  "targets": {
+    "after-schola": {
+      "hosting": {
+        "after-schola": [
+          "after-schola"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
