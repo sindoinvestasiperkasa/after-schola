@@ -127,7 +127,7 @@
             <h2 class="home1-txt3">📙 Categories</h2>
           </div>
           <div class="view-all-second">
-            <a href="category-screen.html"
+            <a href="/catalog"
               ><p class="see-all-txt">
                 See all<span
                   ><img src="/assets/svg/right-arrow.svg" alt="right-arrow"
@@ -138,39 +138,45 @@
       </div>
       <div class="categories-slider mt-16">
         <div class="categories-content single-course">
-          <div>
-            <img
-              src="/assets/images/homescreen/category1.png"
-              alt="category-img"
-              class="w-100"
-            />
-          </div>
+          <a href="/singleCourse">
+            <div>
+              <img
+                src="/assets/images/homescreen/category1.png"
+                alt="category-img"
+                class="w-100"
+              />
+            </div>
+          </a>
           <div class="categories-title">
             <h3 class="category-txt1">Business</h3>
             <p class="category-txt2">120 Courses</p>
           </div>
         </div>
         <div class="categories-content single-course">
-          <div>
-            <img
-              src="/assets/images/homescreen/category2.png"
-              alt="category-img"
-              class="w-100"
-            />
-          </div>
+          <a href="/singleCourse">
+            <div>
+              <img
+                src="/assets/images/homescreen/category2.png"
+                alt="category-img"
+                class="w-100"
+              />
+            </div>
+          </a>
           <div class="categories-title">
             <h3 class="category-txt1">Science</h3>
             <p class="category-txt2">266 Courses</p>
           </div>
         </div>
         <div class="categories-content single-course">
-          <div>
-            <img
-              src="/assets/images/homescreen/category3.png"
-              alt="category-img"
-              class="w-100"
-            />
-          </div>
+          <a href="/singleCourse">
+            <div>
+              <img
+                src="/assets/images/homescreen/category3.png"
+                alt="category-img"
+                class="w-100"
+              />
+            </div>
+          </a>
           <div class="categories-title">
             <h3 class="category-txt1">UI/UX Design</h3>
             <p class="category-txt2">144 Courses</p>
@@ -283,7 +289,7 @@
           <h2 class="home1-txt3">🔥 Trending Courses</h2>
         </div>
         <div class="view-all-second">
-          <a href="trending-course.html"
+          <a href="/trandingCatalog"
             ><p class="see-all-txt">
               See all<span
                 ><img src="/assets/svg/right-arrow.svg" alt="right-arrow"
@@ -393,7 +399,7 @@
             <h2 class="home1-txt3">👨‍🏫 Top Mentors</h2>
           </div>
           <div class="view-all-second">
-            <a href="mentor-screen.html"
+            <a href="/mentorCourses"
               ><p class="see-all-txt">
                 See all<span
                   ><img src="/assets/svg/right-arrow.svg" alt="right-arrow"
@@ -456,7 +462,7 @@
             <h2 class="home1-txt3">🙌 New Release</h2>
           </div>
           <div class="view-all-second">
-            <a href="new-release-course.html"
+            <a href="/newReleaseCatalog"
               ><p class="see-all-txt">
                 See all<span
                   ><img src="/assets/svg/right-arrow.svg" alt="right-arrow"
@@ -466,114 +472,124 @@
         </div>
       </div>
       <div class="home-release-bottom-sec mt-16">
-        <div class="new-courses-sec">
-          <div class="new-courses single-course">
-            <img
-              src="/assets/images/homescreen/release1.png"
-              alt="course-img"
-            />
-            <div class="trending-bookmark">
-              <a href="javascript:void(0);" class="item-bookmark" tabindex="0">
-                <img src="/assets/svg/black-bookmark.svg" alt="bookmark-icon" />
-              </a>
-            </div>
-            <div class="new-courses-txt">
-              <p>Business</p>
-            </div>
-          </div>
-          <div class="trending-course-bottom single-course mt-12">
-            <div>
-              <p class="new-courses-txt1">
-                Master Your Mindset & Brain: Framestorm Your...
-              </p>
-            </div>
-            <div class="trending-course-price">
-              <div>
-                <span class="new-courses-txt3">$210.00</span>
+
+        <a href="/singleCourse">
+          <div class="new-courses-sec">
+            <div class="new-courses single-course">
+              <img
+                src="/assets/images/homescreen/release1.png"
+                alt="course-img"
+              />
+              <div class="trending-bookmark">
+                <a href="javascript:void(0);" class="item-bookmark" tabindex="0">
+                  <img src="/assets/svg/black-bookmark.svg" alt="bookmark-icon" />
+                </a>
               </div>
-              <div>
-                <span class="new-courses-txt4"
-                  ><img
-                    src="/assets/images/result-found/grey-time-icon.svg"
-                    alt="time-icon"
-                /></span>
-                <span class="new-courses-txt5">3h 20m</span>
+              <div class="new-courses-txt">
+                <p>Business</p>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="new-courses-sec">
-          <div class="new-courses single-course">
-            <img
-              src="/assets/images/homescreen/release2.png"
-              alt="course-img"
-            />
-            <div class="trending-bookmark">
-              <a href="javascript:void(0);" class="item-bookmark" tabindex="0">
-                <img src="/assets/svg/black-bookmark.svg" alt="bookmark-icon" />
-              </a>
-            </div>
-            <div class="new-courses-txt">
-              <p>Game Design</p>
-            </div>
-          </div>
-          <div class="trending-course-bottom single-course mt-12">
-            <div>
-              <p class="new-courses-txt1">Introduction to Game Localization</p>
-            </div>
-            <div class="trending-course-price">
+            <div class="trending-course-bottom single-course mt-12">
               <div>
-                <span class="new-courses-txt3">$65.00</span>
+                <p class="new-courses-txt1">
+                  Master Your Mindset & Brain: Framestorm Your...
+                </p>
               </div>
-              <div>
-                <span class="new-courses-txt4"
-                  ><img
-                    src="/assets/images/result-found/grey-time-icon.svg"
-                    alt="time-icon"
-                /></span>
-                <span class="new-courses-txt5">1h 30m</span>
+              <div class="trending-course-price">
+                <div>
+                  <span class="new-courses-txt3">$210.00</span>
+                </div>
+                <div>
+                  <span class="new-courses-txt4"
+                    ><img
+                      src="/assets/images/result-found/grey-time-icon.svg"
+                      alt="time-icon"
+                  /></span>
+                  <span class="new-courses-txt5">3h 20m</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="new-courses-sec">
-          <div class="new-courses single-course">
-            <img
-              src="/assets/images/homescreen/release3.png"
-              alt="course-img"
-            />
-            <div class="trending-bookmark">
-              <a href="javascript:void(0);" class="item-bookmark" tabindex="0">
-                <img src="/assets/svg/black-bookmark.svg" alt="bookmark-icon" />
-              </a>
-            </div>
-            <div class="new-courses-txt">
-              <p>Development</p>
-            </div>
-          </div>
-          <div class="trending-course-bottom single-course mt-12">
-            <div>
-              <p class="new-courses-txt1">
-                The Complete 2023 Fullstack Web Develope...
-              </p>
-            </div>
-            <div class="trending-course-price">
-              <div>
-                <span class="new-courses-txt3">$210.00</span>
+        </a>
+
+        <a href="/singleCourse">
+          <div class="new-courses-sec">
+            <div class="new-courses single-course">
+              <img
+                src="/assets/images/homescreen/release2.png"
+                alt="course-img"
+              />
+              <div class="trending-bookmark">
+                <a href="javascript:void(0);" class="item-bookmark" tabindex="0">
+                  <img src="/assets/svg/black-bookmark.svg" alt="bookmark-icon" />
+                </a>
               </div>
-              <div>
-                <span class="new-courses-txt4"
-                  ><img
-                    src="/assets/images/result-found/grey-time-icon.svg"
-                    alt="time-icon"
-                /></span>
-                <span class="new-courses-txt5">3h 20m</span>
+              <div class="new-courses-txt">
+                <p>Game Design</p>
               </div>
             </div>
+            <div class="trending-course-bottom single-course mt-12">
+              <div>
+                <p class="new-courses-txt1">Introduction to Game Localization</p>
+              </div>
+              <div class="trending-course-price">
+                <div>
+                  <span class="new-courses-txt3">$65.00</span>
+                </div>
+                <div>
+                  <span class="new-courses-txt4"
+                    ><img
+                      src="/assets/images/result-found/grey-time-icon.svg"
+                      alt="time-icon"
+                  /></span>
+                  <span class="new-courses-txt5">1h 30m</span>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </a>
+
+        <a href="/singleCourse">
+          <div class="new-courses-sec">
+            <div class="new-courses single-course">
+              <img
+                src="/assets/images/homescreen/release3.png"
+                alt="course-img"
+              />
+              <div class="trending-bookmark">
+                <a href="javascript:void(0);" class="item-bookmark" tabindex="0">
+                  <img src="/assets/svg/black-bookmark.svg" alt="bookmark-icon" />
+                </a>
+              </div>
+              <div class="new-courses-txt">
+                <p>Development</p>
+              </div>
+            </div>
+            <div class="trending-course-bottom single-course mt-12">
+              <div>
+                <p class="new-courses-txt1">
+                  The Complete 2023 Fullstack Web Develope...
+                </p>
+              </div>
+              <div class="trending-course-price">
+                <div>
+                  <span class="new-courses-txt3">$210.00</span>
+                </div>
+                <div>
+                  <span class="new-courses-txt4"
+                    ><img
+                      src="/assets/images/result-found/grey-time-icon.svg"
+                      alt="time-icon"
+                  /></span>
+                  <span class="new-courses-txt5">3h 20m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
+
     <div class="home-course mt-32">
       <div class="home-course-wrapper-top">
         <div class="container">
@@ -646,303 +662,319 @@
               tabindex="0"
             >
               <div class="container">
-                <div class="result-found-bottom-wrap mt-16 single-course">
-                  <div class="result-img-sec">
-                    <img
-                      src="/assets/images/homescreen/course3.png"
-                      alt="course-img"
-                    />
-                  </div>
-                  <div class="result-content-sec">
-                    <h1 class="d-none">Search</h1>
-                    <div class="result-content-sec-wrap">
-                      <div class="content-first">
-                        <div class="result-bottom-txt">
-                          <p>Life Style</p>
-                        </div>
-                        <div class="result-bookmark">
-                          <a
-                            href="javascript:void(0);"
-                            class="item-bookmark"
-                            tabindex="0"
-                          >
-                            <img
-                              src="/assets/images/single-courses/bookmark-unfill.svg"
-                              alt="bookmark-icon"
-                            />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="content-second mt-12">
-                        <h2>
-                          Make-up for Beginners: learn doing make-up like a Pro
-                        </h2>
-                      </div>
-                      <div class="content-third mt-12">
-                        <div><p class="result-price">$210.00</p></div>
-                        <div class="result-time-sec">
-                          <div>
-                            <img
-                              src="/assets/images/result-found/grey-time-icon.svg"
-                              alt="time-icon"
-                            />
+
+                <a href="/singleCourse">
+                  <div class="result-found-bottom-wrap mt-16 single-course">
+                    <div class="result-img-sec">
+                      <img
+                        src="/assets/images/homescreen/course3.png"
+                        alt="course-img"
+                      />
+                    </div>
+
+                    <div class="result-content-sec">
+                      <h1 class="d-none">Search</h1>
+                      <div class="result-content-sec-wrap">
+                        <div class="content-first">
+                          <div class="result-bottom-txt">
+                            <p>Life Style</p>
                           </div>
-                          <div class="result-time">6h 40m</div>
-                        </div>
-                      </div>
-                      <div class="content-fourth">
-                        <div class="result-rating-sec">
-                          <div class="result-rating-sec-img">
-                            <img
-                              src="/assets/images/result-found/orange-star.svg"
-                              alt="star-img"
-                            />
+                          <div class="result-bookmark">
+                            <a
+                              href="javascript:void(0);"
+                              class="item-bookmark"
+                              tabindex="0"
+                            >
+                              <img
+                                src="/assets/images/single-courses/bookmark-unfill.svg"
+                                alt="bookmark-icon"
+                              />
+                            </a>
                           </div>
-                          <div class="result-rating-txt">
-                            4.8 (6.5k ratings) | 2.7k students
+                        </div>
+                        <div class="content-second mt-12">
+                          <h2>
+                            Make-up for Beginners: learn doing make-up like a Pro
+                          </h2>
+                        </div>
+                        <div class="content-third mt-12">
+                          <div><p class="result-price">$210.00</p></div>
+                          <div class="result-time-sec">
+                            <div>
+                              <img
+                                src="/assets/images/result-found/grey-time-icon.svg"
+                                alt="time-icon"
+                              />
+                            </div>
+                            <div class="result-time">6h 40m</div>
+                          </div>
+                        </div>
+                        <div class="content-fourth">
+                          <div class="result-rating-sec">
+                            <div class="result-rating-sec-img">
+                              <img
+                                src="/assets/images/result-found/orange-star.svg"
+                                alt="star-img"
+                              />
+                            </div>
+                            <div class="result-rating-txt">
+                              4.8 (6.5k ratings) | 2.7k students
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="result-found-bottom-wrap mt-16 single-course">
-                  <div class="result-img-sec">
-                    <img
-                      src="/assets/images/homescreen/course4.png"
-                      alt="course-img"
-                    />
-                  </div>
-                  <div class="result-content-sec">
-                    <h1 class="d-none">Search</h1>
-                    <div class="result-content-sec-wrap">
-                      <div class="content-first">
-                        <div class="result-bottom-txt">
-                          <p>Music</p>
-                        </div>
-                        <div class="result-bookmark">
-                          <a
-                            href="javascript:void(0);"
-                            class="item-bookmark"
-                            tabindex="0"
-                          >
-                            <img
-                              src="/assets/images/single-courses/bookmark-unfill.svg"
-                              alt="bookmark-icon"
-                            />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="content-second mt-12">
-                        <h2>
-                          Acoustic Guitar and Electric Guitar Lessons: Getting
-                          Started
-                        </h2>
-                      </div>
-                      <div class="content-third mt-12">
-                        <div><p class="result-price">$170.00</p></div>
-                        <div class="result-time-sec">
-                          <div>
-                            <img
-                              src="/assets/images/result-found/grey-time-icon.svg"
-                              alt="time-icon"
-                            />
+                </a>
+
+                <a href="/singleCourse">
+                  <div class="result-found-bottom-wrap mt-16 single-course">
+                    <div class="result-img-sec">
+                      <img
+                        src="/assets/images/homescreen/course4.png"
+                        alt="course-img"
+                      />
+                    </div>
+                    <div class="result-content-sec">
+                      <h1 class="d-none">Search</h1>
+                      <div class="result-content-sec-wrap">
+                        <div class="content-first">
+                          <div class="result-bottom-txt">
+                            <p>Music</p>
                           </div>
-                          <div class="result-time">3h 30m</div>
-                        </div>
-                      </div>
-                      <div class="content-fourth">
-                        <div class="result-rating-sec">
-                          <div class="result-rating-sec-img">
-                            <img
-                              src="/assets/images/result-found/orange-star.svg"
-                              alt="star-img"
-                            />
+                          <div class="result-bookmark">
+                            <a
+                              href="javascript:void(0);"
+                              class="item-bookmark"
+                              tabindex="0"
+                            >
+                              <img
+                                src="/assets/images/single-courses/bookmark-unfill.svg"
+                                alt="bookmark-icon"
+                              />
+                            </a>
                           </div>
-                          <div class="result-rating-txt">
-                            4.3 (3.7k ratings) | 104.2k students
+                        </div>
+                        <div class="content-second mt-12">
+                          <h2>
+                            Acoustic Guitar and Electric Guitar Lessons: Getting
+                            Started
+                          </h2>
+                        </div>
+                        <div class="content-third mt-12">
+                          <div><p class="result-price">$170.00</p></div>
+                          <div class="result-time-sec">
+                            <div>
+                              <img
+                                src="/assets/images/result-found/grey-time-icon.svg"
+                                alt="time-icon"
+                              />
+                            </div>
+                            <div class="result-time">3h 30m</div>
+                          </div>
+                        </div>
+                        <div class="content-fourth">
+                          <div class="result-rating-sec">
+                            <div class="result-rating-sec-img">
+                              <img
+                                src="/assets/images/result-found/orange-star.svg"
+                                alt="star-img"
+                              />
+                            </div>
+                            <div class="result-rating-txt">
+                              4.3 (3.7k ratings) | 104.2k students
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="result-found-bottom-wrap mt-16 single-course">
-                  <div class="result-img-sec">
-                    <img
-                      src="/assets/images/homescreen/course5.png"
-                      alt="course-img"
-                    />
-                  </div>
-                  <div class="result-content-sec">
-                    <h1 class="d-none">Search</h1>
-                    <div class="result-content-sec-wrap">
-                      <div class="content-first">
-                        <div class="result-bottom-txt">
-                          <p>Photography</p>
-                        </div>
-                        <div class="result-bookmark">
-                          <a
-                            href="javascript:void(0);"
-                            class="item-bookmark"
-                            tabindex="0"
-                          >
-                            <img
-                              src="/assets/images/single-courses/bookmark-unfill.svg"
-                              alt="bookmark-icon"
-                            />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="content-second mt-12">
-                        <h2>
-                          Night Photography: You Can Shoot Stunning Night Photos
-                        </h2>
-                      </div>
-                      <div class="content-third mt-12">
-                        <div><p class="result-price">$210.00</p></div>
-                        <div class="result-time-sec">
-                          <div>
-                            <img
-                              src="/assets/images/result-found/grey-time-icon.svg"
-                              alt="time-icon"
-                            />
+                </a>
+
+                <a href="/singleCourse">
+                  <div class="result-found-bottom-wrap mt-16 single-course">
+                    <div class="result-img-sec">
+                      <img
+                        src="/assets/images/homescreen/course5.png"
+                        alt="course-img"
+                      />
+                    </div>
+                    <div class="result-content-sec">
+                      <h1 class="d-none">Search</h1>
+                      <div class="result-content-sec-wrap">
+                        <div class="content-first">
+                          <div class="result-bottom-txt">
+                            <p>Photography</p>
                           </div>
-                          <div class="result-time">6h 40m</div>
-                        </div>
-                      </div>
-                      <div class="content-fourth">
-                        <div class="result-rating-sec">
-                          <div class="result-rating-sec-img">
-                            <img
-                              src="/assets/images/result-found/orange-star.svg"
-                              alt="star-img"
-                            />
+                          <div class="result-bookmark">
+                            <a
+                              href="javascript:void(0);"
+                              class="item-bookmark"
+                              tabindex="0"
+                            >
+                              <img
+                                src="/assets/images/single-courses/bookmark-unfill.svg"
+                                alt="bookmark-icon"
+                              />
+                            </a>
                           </div>
-                          <div class="result-rating-txt">
-                            4.6 (2.1k ratings) | 86.7k students
+                        </div>
+                        <div class="content-second mt-12">
+                          <h2>
+                            Night Photography: You Can Shoot Stunning Night Photos
+                          </h2>
+                        </div>
+                        <div class="content-third mt-12">
+                          <div><p class="result-price">$210.00</p></div>
+                          <div class="result-time-sec">
+                            <div>
+                              <img
+                                src="/assets/images/result-found/grey-time-icon.svg"
+                                alt="time-icon"
+                              />
+                            </div>
+                            <div class="result-time">6h 40m</div>
+                          </div>
+                        </div>
+                        <div class="content-fourth">
+                          <div class="result-rating-sec">
+                            <div class="result-rating-sec-img">
+                              <img
+                                src="/assets/images/result-found/orange-star.svg"
+                                alt="star-img"
+                              />
+                            </div>
+                            <div class="result-rating-txt">
+                              4.6 (2.1k ratings) | 86.7k students
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="result-found-bottom-wrap mt-16 single-course">
-                  <div class="result-img-sec">
-                    <img
-                      src="/assets/images/homescreen/course6.png"
-                      alt="course-img"
-                    />
-                  </div>
-                  <div class="result-content-sec">
-                    <h1 class="d-none">Search</h1>
-                    <div class="result-content-sec-wrap">
-                      <div class="content-first">
-                        <div class="result-bottom-txt">
-                          <p>Design</p>
-                        </div>
-                        <div class="result-bookmark">
-                          <a
-                            href="javascript:void(0);"
-                            class="item-bookmark"
-                            tabindex="0"
-                          >
-                            <img
-                              src="/assets/images/single-courses/bookmark-unfill.svg"
-                              alt="bookmark-icon"
-                            />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="content-second mt-12">
-                        <h2>Learn Figma - UI/UX Design Essential Training</h2>
-                      </div>
-                      <div class="content-third mt-12">
-                        <div><p class="result-price">$140.00</p></div>
-                        <div class="result-time-sec">
-                          <div>
-                            <img
-                              src="/assets/images/result-found/grey-time-icon.svg"
-                              alt="time-icon"
-                            />
+                </a>
+
+                <a href="/singleCourse">
+                  <div class="result-found-bottom-wrap mt-16 single-course">
+                    <div class="result-img-sec">
+                      <img
+                        src="/assets/images/homescreen/course6.png"
+                        alt="course-img"
+                      />
+                    </div>
+                    <div class="result-content-sec">
+                      <h1 class="d-none">Search</h1>
+                      <div class="result-content-sec-wrap">
+                        <div class="content-first">
+                          <div class="result-bottom-txt">
+                            <p>Design</p>
                           </div>
-                          <div class="result-time">3h 20m</div>
-                        </div>
-                      </div>
-                      <div class="content-fourth">
-                        <div class="result-rating-sec">
-                          <div class="result-rating-sec-img">
-                            <img
-                              src="/assets/images/result-found/orange-star.svg"
-                              alt="star-img"
-                            />
+                          <div class="result-bookmark">
+                            <a
+                              href="javascript:void(0);"
+                              class="item-bookmark"
+                              tabindex="0"
+                            >
+                              <img
+                                src="/assets/images/single-courses/bookmark-unfill.svg"
+                                alt="bookmark-icon"
+                              />
+                            </a>
                           </div>
-                          <div class="result-rating-txt">
-                            4.8 (12.5k ratings) | 52.9k students
+                        </div>
+                        <div class="content-second mt-12">
+                          <h2>Learn Figma - UI/UX Design Essential Training</h2>
+                        </div>
+                        <div class="content-third mt-12">
+                          <div><p class="result-price">$140.00</p></div>
+                          <div class="result-time-sec">
+                            <div>
+                              <img
+                                src="/assets/images/result-found/grey-time-icon.svg"
+                                alt="time-icon"
+                              />
+                            </div>
+                            <div class="result-time">3h 20m</div>
+                          </div>
+                        </div>
+                        <div class="content-fourth">
+                          <div class="result-rating-sec">
+                            <div class="result-rating-sec-img">
+                              <img
+                                src="/assets/images/result-found/orange-star.svg"
+                                alt="star-img"
+                              />
+                            </div>
+                            <div class="result-rating-txt">
+                              4.8 (12.5k ratings) | 52.9k students
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="result-found-bottom-wrap mt-16 single-course">
-                  <div class="result-img-sec">
-                    <img
-                      src="/assets/images/homescreen/course7.png"
-                      alt="course-img"
-                    />
-                  </div>
-                  <div class="result-content-sec">
-                    <h1 class="d-none">Search</h1>
-                    <div class="result-content-sec-wrap">
-                      <div class="content-first">
-                        <div class="result-bottom-txt">
-                          <p>Marketing</p>
-                        </div>
-                        <div class="result-bookmark">
-                          <a
-                            href="javascript:void(0);"
-                            class="item-bookmark"
-                            tabindex="0"
-                          >
-                            <img
-                              src="/assets/images/single-courses/bookmark-unfill.svg"
-                              alt="bookmark-icon"
-                            />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="content-second mt-12">
-                        <h2>YouTube SEO: How to Rank #1 on YouTube</h2>
-                      </div>
-                      <div class="content-third mt-12">
-                        <div><p class="result-price">$99.00</p></div>
-                        <div class="result-time-sec">
-                          <div>
-                            <img
-                              src="/assets/images/result-found/grey-time-icon.svg"
-                              alt="time-icon"
-                            />
+                </a>
+
+                <a href="/singleCourse">
+                  <div class="result-found-bottom-wrap mt-16 single-course">
+                    <div class="result-img-sec">
+                      <img
+                        src="/assets/images/homescreen/course7.png"
+                        alt="course-img"
+                      />
+                    </div>
+                    <div class="result-content-sec">
+                      <h1 class="d-none">Search</h1>
+                      <div class="result-content-sec-wrap">
+                        <div class="content-first">
+                          <div class="result-bottom-txt">
+                            <p>Marketing</p>
                           </div>
-                          <div class="result-time">6h 40m</div>
-                        </div>
-                      </div>
-                      <div class="content-fourth">
-                        <div class="result-rating-sec">
-                          <div class="result-rating-sec-img">
-                            <img
-                              src="/assets/images/result-found/orange-star.svg"
-                              alt="star-img"
-                            />
+                          <div class="result-bookmark">
+                            <a
+                              href="javascript:void(0);"
+                              class="item-bookmark"
+                              tabindex="0"
+                            >
+                              <img
+                                src="/assets/images/single-courses/bookmark-unfill.svg"
+                                alt="bookmark-icon"
+                              />
+                            </a>
                           </div>
-                          <div class="result-rating-txt">
-                            4.9 (1.2k ratings) | 5.3k students
+                        </div>
+                        <div class="content-second mt-12">
+                          <h2>YouTube SEO: How to Rank #1 on YouTube</h2>
+                        </div>
+                        <div class="content-third mt-12">
+                          <div><p class="result-price">$99.00</p></div>
+                          <div class="result-time-sec">
+                            <div>
+                              <img
+                                src="/assets/images/result-found/grey-time-icon.svg"
+                                alt="time-icon"
+                              />
+                            </div>
+                            <div class="result-time">6h 40m</div>
+                          </div>
+                        </div>
+                        <div class="content-fourth">
+                          <div class="result-rating-sec">
+                            <div class="result-rating-sec-img">
+                              <img
+                                src="/assets/images/result-found/orange-star.svg"
+                                alt="star-img"
+                              />
+                            </div>
+                            <div class="result-rating-txt">
+                              4.9 (1.2k ratings) | 5.3k students
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div
@@ -952,6 +984,7 @@
               tabindex="0"
             >
               <div class="container">
+                
                 <div class="result-found-bottom-wrap mt-16 single-course">
                   <div class="result-img-sec">
                     <img
@@ -1019,67 +1052,70 @@
               tabindex="0"
             >
               <div class="container">
-                <div class="result-found-bottom-wrap mt-16 single-course">
-                  <div class="result-img-sec">
-                    <img
-                      src="/assets/images/homescreen/course4.png"
-                      alt="course-img"
-                    />
-                  </div>
-                  <div class="result-content-sec">
-                    <h1 class="d-none">Search</h1>
-                    <div class="result-content-sec-wrap">
-                      <div class="content-first">
-                        <div class="result-bottom-txt">
-                          <p>Music</p>
-                        </div>
-                        <div class="result-bookmark">
-                          <a
-                            href="javascript:void(0);"
-                            class="item-bookmark"
-                            tabindex="0"
-                          >
-                            <img
-                              src="/assets/images/single-courses/bookmark-unfill.svg"
-                              alt="bookmark-icon"
-                            />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="content-second mt-12">
-                        <h2>
-                          Acoustic Guitar and Electric Guitar Lessons: Getting
-                          Started
-                        </h2>
-                      </div>
-                      <div class="content-third mt-12">
-                        <div><p class="result-price">$170.00</p></div>
-                        <div class="result-time-sec">
-                          <div>
-                            <img
-                              src="/assets/images/result-found/grey-time-icon.svg"
-                              alt="time-icon"
-                            />
+
+                <a href="/singleCourse">
+                  <div class="result-found-bottom-wrap mt-16 single-course">
+                    <div class="result-img-sec">
+                      <img
+                        src="/assets/images/homescreen/course4.png"
+                        alt="course-img"
+                      />
+                    </div>
+                    <div class="result-content-sec">
+                      <h1 class="d-none">Search</h1>
+                      <div class="result-content-sec-wrap">
+                        <div class="content-first">
+                          <div class="result-bottom-txt">
+                            <p>Music</p>
                           </div>
-                          <div class="result-time">3h 30m</div>
-                        </div>
-                      </div>
-                      <div class="content-fourth">
-                        <div class="result-rating-sec">
-                          <div class="result-rating-sec-img">
-                            <img
-                              src="/assets/images/result-found/orange-star.svg"
-                              alt="star-img"
-                            />
+                          <div class="result-bookmark">
+                            <a
+                              href="javascript:void(0);"
+                              class="item-bookmark"
+                              tabindex="0"
+                            >
+                              <img
+                                src="/assets/images/single-courses/bookmark-unfill.svg"
+                                alt="bookmark-icon"
+                              />
+                            </a>
                           </div>
-                          <div class="result-rating-txt">
-                            4.3 (3.7k ratings) | 104.2k students
+                        </div>
+                        <div class="content-second mt-12">
+                          <h2>
+                            Acoustic Guitar and Electric Guitar Lessons: Getting
+                            Started
+                          </h2>
+                        </div>
+                        <div class="content-third mt-12">
+                          <div><p class="result-price">$170.00</p></div>
+                          <div class="result-time-sec">
+                            <div>
+                              <img
+                                src="/assets/images/result-found/grey-time-icon.svg"
+                                alt="time-icon"
+                              />
+                            </div>
+                            <div class="result-time">3h 30m</div>
+                          </div>
+                        </div>
+                        <div class="content-fourth">
+                          <div class="result-rating-sec">
+                            <div class="result-rating-sec-img">
+                              <img
+                                src="/assets/images/result-found/orange-star.svg"
+                                alt="star-img"
+                              />
+                            </div>
+                            <div class="result-rating-txt">
+                              4.3 (3.7k ratings) | 104.2k students
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div
@@ -1089,64 +1125,67 @@
               tabindex="0"
             >
               <div class="container">
-                <div class="result-found-bottom-wrap mt-16 single-course">
-                  <div class="result-img-sec">
-                    <img
-                      src="/assets/images/homescreen/course7.png"
-                      alt="course-img"
-                    />
-                  </div>
-                  <div class="result-content-sec">
-                    <h1 class="d-none">Search</h1>
-                    <div class="result-content-sec-wrap">
-                      <div class="content-first">
-                        <div class="result-bottom-txt">
-                          <p>Marketing</p>
-                        </div>
-                        <div class="result-bookmark">
-                          <a
-                            href="javascript:void(0);"
-                            class="item-bookmark"
-                            tabindex="0"
-                          >
-                            <img
-                              src="/assets/images/single-courses/bookmark-unfill.svg"
-                              alt="bookmark-icon"
-                            />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="content-second mt-12">
-                        <h2>YouTube SEO: How to Rank #1 on YouTube</h2>
-                      </div>
-                      <div class="content-third mt-12">
-                        <div><p class="result-price">$99.00</p></div>
-                        <div class="result-time-sec">
-                          <div>
-                            <img
-                              src="/assets/images/result-found/grey-time-icon.svg"
-                              alt="time-icon"
-                            />
+
+                <a href="/singleCourse">
+                  <div class="result-found-bottom-wrap mt-16 single-course">
+                    <div class="result-img-sec">
+                      <img
+                        src="/assets/images/homescreen/course7.png"
+                        alt="course-img"
+                      />
+                    </div>
+                    <div class="result-content-sec">
+                      <h1 class="d-none">Search</h1>
+                      <div class="result-content-sec-wrap">
+                        <div class="content-first">
+                          <div class="result-bottom-txt">
+                            <p>Marketing</p>
                           </div>
-                          <div class="result-time">6h 40m</div>
-                        </div>
-                      </div>
-                      <div class="content-fourth">
-                        <div class="result-rating-sec">
-                          <div class="result-rating-sec-img">
-                            <img
-                              src="/assets/images/result-found/orange-star.svg"
-                              alt="star-img"
-                            />
+                          <div class="result-bookmark">
+                            <a
+                              href="javascript:void(0);"
+                              class="item-bookmark"
+                              tabindex="0"
+                            >
+                              <img
+                                src="/assets/images/single-courses/bookmark-unfill.svg"
+                                alt="bookmark-icon"
+                              />
+                            </a>
                           </div>
-                          <div class="result-rating-txt">
-                            4.9 (1.2k ratings) | 5.3k students
+                        </div>
+                        <div class="content-second mt-12">
+                          <h2>YouTube SEO: How to Rank #1 on YouTube</h2>
+                        </div>
+                        <div class="content-third mt-12">
+                          <div><p class="result-price">$99.00</p></div>
+                          <div class="result-time-sec">
+                            <div>
+                              <img
+                                src="/assets/images/result-found/grey-time-icon.svg"
+                                alt="time-icon"
+                              />
+                            </div>
+                            <div class="result-time">6h 40m</div>
+                          </div>
+                        </div>
+                        <div class="content-fourth">
+                          <div class="result-rating-sec">
+                            <div class="result-rating-sec-img">
+                              <img
+                                src="/assets/images/result-found/orange-star.svg"
+                                alt="star-img"
+                              />
+                            </div>
+                            <div class="result-rating-txt">
+                              4.9 (1.2k ratings) | 5.3k students
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>

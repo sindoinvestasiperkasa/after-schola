@@ -44,17 +44,23 @@
                 :class="{ active: route.path.startsWith('/home') }"
               ></div>
             </li>
-            <li>
-              <a href="bookmark.html">
+
+            <li :class="{ active: route.path.startsWith('/myAchievments') }">
+              <RouterLink
+                to="/myAchievments"
+                :class="{ active: route.path.startsWith('/myAchievments') }"
+              >
                 <svg
+                  :class="{ active: route.path.startsWith('/myAchievments') }"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  
                 >
                   <mask
-                    id="mask0_202_2005"
+                    id="mask0_202_1996"
                     style="mask-type: alpha"
                     maskUnits="userSpaceOnUse"
                     x="0"
@@ -64,7 +70,7 @@
                   >
                     <rect width="24" height="24" fill="white" />
                   </mask>
-                  <g mask="url(#mask0_202_2005)">
+                  <g mask="url(#mask0_202_1996)">
                     <path
                       d="M13 7C13.5304 7 14.0391 7.21071 14.4142 7.58579C14.7893 7.96086 15 8.46957 15 9V21L10 18L5 21V9C5 8.46957 5.21071 7.96086 5.58579 7.58579C5.96086 7.21071 6.46957 7 7 7H13Z"
                       stroke="black"
@@ -79,10 +85,14 @@
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
+    
                   </g>
                 </svg>
-              </a>
-              <div class="orange-boder"></div>
+              </RouterLink>
+              <div
+                class="orange-boder"
+                :class="{ active: route.path.startsWith('/myAchievments') }"
+              ></div>
             </li>
             <li :class="{ active: route.path.startsWith('/myCourse') }">
               <RouterLink
