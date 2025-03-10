@@ -1199,5 +1199,123 @@
 <script setup>
 import HeaderComponent from "@/components/HeaderComponent.vue";
 import MenuBottom from "@/components/MenuBottom.vue";
+
+import { onMounted, nextTick } from "vue";
+
+onMounted(() => {
+  nextTick(() => {
+    if (window.$ && $(".categories-slider").length) {
+      $(".categories-slider").slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    } else {
+      console.error("Slick.js gagal dijalankan. Periksa apakah jQuery sudah dimuat.");
+    }
+
+    if (window.$ && $(".trending-course-bottom-wrap").length) {
+      $(".trending-course-bottom-wrap").slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    } else {
+      console.error("Slick.js gagal dijalankan. Periksa apakah jQuery sudah dimuat.");
+    }
+
+    if (window.$ && $(".home-mentor-bottom").length) {
+      $(".home-mentor-bottom").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    } else {
+      console.error("Slick.js gagal dijalankan. Periksa apakah jQuery sudah dimuat.");
+    }
+
+    if (window.$ && $(".home-release-bottom-sec").length) {
+      $(".home-release-bottom-sec").slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    } else {
+      console.error("Slick.js gagal dijalankan. Periksa apakah jQuery sudah dimuat.");
+    }
+  });
+});
 </script>
 <style></style>
