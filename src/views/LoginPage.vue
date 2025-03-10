@@ -163,7 +163,7 @@
         </div>
       </div>
       <div class="sign-in-btn mt-32">
-        <a href="preferred-language.html">Sign In</a>
+        <a href="/home">Sign In</a>
       </div>
       <div class="or-section mt-32">
         <p>or continue with</p>

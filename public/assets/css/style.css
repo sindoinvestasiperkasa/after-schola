@@ -4329,7 +4329,7 @@ span.new-courses-txt5 {
     margin-left: 16px;
 }
 .new-courses-txt4 img{
-    display: inline-block;!important;
+    display: inline-block!important;
 }
 .home1-txt3 {
     color: var(--2, #000);

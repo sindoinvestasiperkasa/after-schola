@@ -264,7 +264,7 @@
         </div>
       </div>
       <div class="sign-up-btn mt-32">
-        <a href="sign-in-screen.html">Sign Up</a>
+        <a href="/login">Sign Up</a>
       </div>
       <div class="or-section mt-32">
         <p>or continue with</p>
