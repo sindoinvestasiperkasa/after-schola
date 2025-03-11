@@ -42,6 +42,13 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/myAchievments/MyAchievmentsView.vue"),
   },
   {
+    path: "/achievement-detail/:title",
+    name: "Detail Achievement",
+    component: () => import("@/views/myAchievments/DetailMyAchievementView.vue"),
+    props: true
+  },
+
+  {
     path: "/myCourse",
     name: "My Course",
     component: () => import("@/views/myCourse/MyCourseView.vue"),

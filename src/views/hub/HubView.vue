@@ -7,7 +7,7 @@
 				<h1 class="d-none">Hidden</h1>
 				<div class="chatscree2-wrap-sec mt-32">
 
-					<a href="/singleCourse">
+					<a href="/chat">
 						<div class="chatscree2-content chat-screen-redirect">
 							<div class="chatscree2-wrap">
 								<div class="chat-img">
@@ -35,7 +35,7 @@
 						</div>
 					</a>
 
-					<a href="/singleCourse">
+					<a href="/chat">
 						<div class="chatscree2-content mt-16 chat-screen-redirect">
 							<div class="chatscree2-wrap">
 								<div class="chat-img">
@@ -59,7 +59,7 @@
 						</div>
 					</a>
 
-					<a href="/singleCourse">						
+					<a href="/chat">						
 						<div class="chatscree2-content mt-16 chat-screen-redirect">
 							<div class="chatscree2-wrap">
 								<div class="chat-img">
@@ -86,7 +86,7 @@
 						</div>
 					</a>
 
-					<a href="/singleCourse">
+					<a href="/chat">
 						<div class="chatscree2-content mt-16 chat-screen-redirect">
 							<div class="chatscree2-wrap">
 								<div class="chat-img">
@@ -113,7 +113,7 @@
 						</div>
 					</a>
 
-					<a href="/singleCourse">
+					<a href="/chat">
 						<div class="chatscree2-content mt-16 chat-screen-redirect">
 							<div class="chatscree2-wrap">
 								<div class="chat-img">
