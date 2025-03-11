@@ -9,7 +9,7 @@
 						<div class="profile-edit-img">
 							<img src="/assets/images/courses/profile-img.png" alt="profile-img">
 							<div class="image-input">
-								<a href="profile-edit.html" class="image-button">
+								<a href="/editProfile" class="image-button">
 									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<mask id="mask0_202_7514" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
 											<rect width="24" height="24" fill="white"/>
@@ -44,7 +44,7 @@
 					</div>
 					<div class="profile-third">
 						<div class="setting-screen-wrap mt-32" >
-							<a href="wallet-screen.html ">
+							<a href="/wallet">
 								<div class="setting-deatils">
 									<div class="setting-icon">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +73,7 @@
 								</div>
 								<div class="setting-border mt-16"></div>
 							</a>
-							<a href="apply-coupon.html ">
+							<a href="/addCoupon ">
 								<div class="setting-deatils">
 									<div class="setting-icon">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +107,7 @@
 								</div>
 								<div class="setting-border mt-16"></div>
 							</a>
-							<a href="bookmark.html ">
+							<a href="/myAchievments ">
 								<div class="setting-deatils">
 									<div class="setting-icon">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -121,7 +121,7 @@
 										</svg>
 									</div>
 									<div class="icon-name">
-										<p>Bookmarks</p>
+										<p>My Achievements</p>
 									</div>
 									<div class="icon-back-btn">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
