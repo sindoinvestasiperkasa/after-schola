@@ -18,7 +18,7 @@
                     <p>Jenny Wilona</p>
                 </div>
                 <div class="skip-btn-goal">
-                    <a href="chat-screen.html">
+                    <a href="/hub">
                         <img src="/assets/images/single-courses/comment-icon.svg" alt="comment-icon">
                     </a>
                 </div>
