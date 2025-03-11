@@ -40,7 +40,12 @@
   <!-- Achievements -->
   <section class="section-container">
     <h3 class="section-title">Achievements</h3>
-    <div v-for="achievement in achievements" :key="achievement.id" class="achievement-card">
+    <div 
+    v-for="achievement in achievements" 
+    :key="achievement.id" 
+    class="achievement-card"
+    @click="goToDetail(achievement)"
+    >
       <img :src="achievement.icon" alt="icon" class="achievement-icon" />
       <div class="achievement-info">
         <div class="achievement-header">
@@ -59,9 +64,12 @@
 </template>
 
 <script setup>
+
 import { ref } from "vue";
 import MenuBottom from "@/components/MenuBottom.vue";
+import { useRouter } from "vue-router";
 
+const router = useRouter();
 const totalPoints = ref(350);
 
 const achievements = ref([
@@ -98,6 +106,20 @@ const achievements = ref([
     icon: "/assets/images/favicon/quiz.png",
   },
 ]);
+
+const goToDetail = (achievement) => {
+  router.push({
+    path: `/achievement-detail/${achievement.title}`,
+    query: {
+      title: achievement.title,
+      description: achievement.description,
+      points: achievement.points,
+      progress: achievement.progress,
+      icon: achievement.icon
+    }
+  });
+};
+
 </script>
 
 <style scoped>
@@ -105,13 +127,6 @@ const achievements = ref([
 body {
   background-color: #f9f9f9;
   font-family: Arial, sans-serif;
-}
-
-/* Header */
-.top-navbar {
-  background: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 15px;
 }
 
 .top-navbar-full {
