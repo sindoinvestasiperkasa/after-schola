@@ -475,7 +475,7 @@
 
         <a href="/singleCourse">
           <div class="new-courses-sec">
-            <div class="new-courses single-course">
+            <div class="new-courses single-course ms-3">
               <img
                 src="/assets/images/homescreen/release1.png"
                 alt="course-img"
@@ -489,7 +489,7 @@
                 <p>Business</p>
               </div>
             </div>
-            <div class="trending-course-bottom single-course mt-12">
+            <div class="trending-course-bottom single-course mt-12 ms-3">
               <div>
                 <p class="new-courses-txt1">
                   Master Your Mindset & Brain: Framestorm Your...
@@ -514,7 +514,7 @@
 
         <a href="/singleCourse">
           <div class="new-courses-sec">
-            <div class="new-courses single-course">
+            <div class="new-courses single-course ms-3">
               <img
                 src="/assets/images/homescreen/release2.png"
                 alt="course-img"
@@ -528,7 +528,7 @@
                 <p>Game Design</p>
               </div>
             </div>
-            <div class="trending-course-bottom single-course mt-12">
+            <div class="trending-course-bottom single-course mt-12 ms-3">
               <div>
                 <p class="new-courses-txt1">Introduction to Game Localization</p>
               </div>
@@ -551,7 +551,7 @@
 
         <a href="/singleCourse">
           <div class="new-courses-sec">
-            <div class="new-courses single-course">
+            <div class="new-courses single-course ms-3">
               <img
                 src="/assets/images/homescreen/release3.png"
                 alt="course-img"
@@ -565,7 +565,7 @@
                 <p>Development</p>
               </div>
             </div>
-            <div class="trending-course-bottom single-course mt-12">
+            <div class="trending-course-bottom single-course mt-12 ms-3">
               <div>
                 <p class="new-courses-txt1">
                   The Complete 2023 Fullstack Web Develope...

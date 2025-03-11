@@ -117,6 +117,11 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/checkout/StatusPaymentView.vue"),
   },
   {
+    path: "/wallet",
+    name: "Dompet Digital",
+    component: () => import("@/views/checkout/MyWalletView.vue"),
+  },
+  {
     path: "/coursesRating",
     name: "Rating Courses",
     component: () => import("@/views/myAchievments/CoursesCompletedView.vue"),
@@ -130,6 +135,16 @@ const routes: Array<RouteRecordRaw> = [
     path: "/profile",
     name: "Profile",
     component: () => import("@/views/profile/ProfileView.vue"),
+  },
+  {
+    path: "/editProfile",
+    name: "Edit Profile",
+    component: () => import("@/views/profile/EditProfileView.vue"),
+  },
+  {
+    path: "/notification",
+    name: "Notifikasi",
+    component: () => import("@/views/profile/NotificationView.vue"),
   },
 ];
 
