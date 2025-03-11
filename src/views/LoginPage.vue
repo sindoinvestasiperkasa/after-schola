@@ -41,12 +41,12 @@
   <!-- Header end -->
   <!-- Sign in screen start -->
   <section id="sign-in-screen-content">
-    <div class="container">
+    <form @submit.prevent="handleSubmit" class="container">
       <div class="sign-in-login">
         <h1 class="login-txt">Login To Your Account</h1>
       </div>
       <div class="sign-in-login-form mt-24">
-        <form>
+        <div>
           <div class="form-details-sign-in">
             <span>
               <svg
@@ -87,9 +87,10 @@
             </span>
             <input
               type="email"
-              id="Email"
+              v-model="formData.email"
               placeholder="Email"
               class="sign-in-custom-input"
+              required
             />
           </div>
           <div class="form-details-sign-in mt-12">
@@ -139,13 +140,14 @@
             </span>
             <input
               type="password"
-              id="password"
+              v-model="formData.password"
               placeholder="Password"
+              required
               class="sign-in-custom-input"
             />
             <i class="fas fa-eye-slash" id="eye"></i>
           </div>
-        </form>
+        </div>
       </div>
       <div class="remember-section">
         <div class="footer-checkbox-sec">
@@ -158,13 +160,13 @@
             >Remember Me</label
           >
         </div>
-        <div class="forget-btn">
-          <a href="forget-password-screen.html">Forget password?</a>
+        <div @click="router.push(`/forgetpassword`)" class="forget-btn">
+          <a>Forget password?</a>
         </div>
       </div>
-      <div class="sign-in-btn mt-32">
-        <a href="/home">Sign In</a>
-      </div>
+      <button type="submit" class="sign-in-btn mt-32">
+        <a class="text-white">Sign In</a>
+      </button>
       <div class="or-section mt-32">
         <p>or continue with</p>
       </div>
@@ -281,7 +283,7 @@
           </a>
         </div>
       </div>
-    </div>
+    </form>
   </section>
   <!-- Sign in screen end -->
   <!-- Footer start -->
@@ -293,5 +295,35 @@
   <!-- Footer end -->
 </template>
 
-<script setup></script>
-<style scoped></style>
+<script setup>
+import { reactive } from "vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const formData = reactive({
+  email: "",
+  password: "",
+});
+
+const handleSubmit = () => {
+  console.log("Form Data:", formData);
+};
+</script>
+<style scoped>
+.forget-btn a {
+  color: var(--8, #f97316);
+}
+
+button {
+  all: unset; /* Menghapus semua style default dari button */
+  display: block; /* Agar bisa diberi ukuran dan posisi seperti div */
+  width: 100%; /* Opsional, atur sesuai kebutuhan */
+  text-align: center; /* Agar teks di tengah */
+  cursor: pointer; /* Agar tetap terlihat bisa diklik */
+}
+
+.sign-in-btn {
+  margin-top: 11px;
+}
+</style>

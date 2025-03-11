@@ -22,6 +22,16 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/LoginPage.vue"),
   },
   {
+    path: "/forgetpassword",
+    name: "Forget Password",
+    component: () => import("@/views/ForgetPassword.vue"),
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: () => import("@/views/RegisterPage.vue"),
+  },
+  {
     path: "/register",
     name: "Register",
     component: () => import("@/views/RegisterPage.vue"),
@@ -44,8 +54,9 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/achievement-detail/:title",
     name: "Detail Achievement",
-    component: () => import("@/views/myAchievments/DetailMyAchievementView.vue"),
-    props: true
+    component: () =>
+      import("@/views/myAchievments/DetailMyAchievementView.vue"),
+    props: true,
   },
 
   {

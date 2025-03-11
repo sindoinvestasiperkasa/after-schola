@@ -41,12 +41,12 @@
   <!-- Header end -->
   <!-- Sign up screen start -->
   <section id="sign-up-screen-content">
-    <div class="container">
+    <form @submit.prevent="handleRegister" class="container">
       <div class="sign-in-login mt-24">
         <h1 class="login-txt">Create Your Account</h1>
       </div>
       <div class="sign-up-login-form mt-24">
-        <form>
+        <div>
           <div class="form-details-sign-in">
             <span>
               <svg
@@ -87,9 +87,10 @@
             </span>
             <input
               type="text"
-              id="name"
+              v-model="formData.name"
               placeholder="Your Name"
               class="sign-in-custom-input"
+              required
             />
           </div>
           <div class="form-details-sign-in mt-12">
@@ -132,16 +133,18 @@
             </span>
             <input
               type="email"
-              id="Email"
+              v-model="formData.email"
               placeholder="Email"
               class="sign-in-custom-input"
+              required
             />
           </div>
           <div class="mobile-form mt-12">
             <input
               type="text"
-              id="mobile_code"
+              v-model="formData.mobile"
               class="sign-in-custom-input"
+              required
               placeholder="Enter Mobile Number"
             />
           </div>
@@ -191,9 +194,10 @@
             </span>
             <input
               type="password"
-              id="password"
+              v-model="formData.password"
               placeholder="Password"
               class="sign-in-custom-input"
+              required
             />
             <i class="fas fa-eye-slash" id="eye"></i>
           </div>
@@ -243,15 +247,16 @@
             </span>
             <input
               type="password"
-              id="confirm-password"
+              v-model="formData.confirmPassword"
+              required
               placeholder="Confirm Password"
               class="sign-in-custom-input"
             />
             <i class="fas fa-eye-slash" id="eye1"></i>
           </div>
-        </form>
+        </div>
       </div>
-      <div class="remember-section">
+      <!-- <div class="remember-section">
         <div class="footer-checkbox-sec">
           <input
             class="footer-checkbox-input"
@@ -262,10 +267,10 @@
             >Remember Me</label
           >
         </div>
-      </div>
-      <div class="sign-up-btn mt-32">
-        <a href="/login">Sign Up</a>
-      </div>
+      </div> -->
+      <button type="submit" class="sign-up-btn mt-32">
+        <a class="text-white">Sign Up</a>
+      </button>
       <div class="or-section mt-32">
         <p>or continue with</p>
       </div>
@@ -382,7 +387,7 @@
           </a>
         </div>
       </div>
-    </div>
+    </form>
   </section>
   <!-- Sign up screen end -->
   <!-- Footer start -->
@@ -394,5 +399,70 @@
   <!-- Footer end -->
 </template>
 
-<script setup></script>
-<style scoped></style>
+<script setup lang="ts">
+import { auth, db } from "@/utils/firebaseConfig";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { doc, setDoc } from "firebase/firestore";
+import { reactive, ref } from "vue";
+
+const isLoading = ref(false);
+
+const formData = reactive({
+  name: "",
+  email: "",
+  mobile: "",
+  password: "",
+  confirmPassword: "",
+  rememberMe: false,
+});
+
+const handleRegister = async () => {
+  if (formData.password !== formData.confirmPassword) {
+    alert("Passwords do not match!");
+    return;
+  }
+
+  try {
+    isLoading.value = true;
+
+    // Register ke Firebase Authentication
+    const userCredential = await createUserWithEmailAndPassword(
+      auth,
+      formData.email,
+      formData.password
+    );
+    const user = userCredential.user;
+
+    // Simpan data ke Firestore
+    await setDoc(doc(db, "users", user.uid), {
+      name: formData.name,
+      email: formData.email,
+      mobile: formData.mobile,
+      createdAt: new Date(),
+      userID: user.uid,
+      role: "user",
+    });
+
+    alert("Registration successful!");
+
+    console.log("user", user);
+  } catch (error) {
+    alert("Error: " + error.message);
+  } finally {
+    isLoading.value = false;
+  }
+};
+</script>
+<style scoped>
+button {
+  all: unset; /* Menghapus semua style default dari button */
+  display: block; /* Agar bisa diberi ukuran dan posisi seperti div */
+  width: 100%; /* Opsional, atur sesuai kebutuhan */
+  text-align: center; /* Agar teks di tengah */
+  cursor: pointer; /* Agar tetap terlihat bisa diklik */
+}
+
+.sign-up-btn {
+  margin-top: 11px;
+}
+</style>
